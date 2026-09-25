@@ -1,4 +1,53 @@
 .header {
     display: flex;
-    direction: column;
+    flex-direction: column;
+    background-color: darkblue;
+}
+
+.header_top, .header_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+
+a, .logo, .hero_title, .hero_text {
+    color: white;
+    text-decoration: none;
+}
+
+.hero_text {
+    max-width: 300px;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.hero_title {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.hero_button {
+    background-color: blue;
+    color: white;
+}
+
+.header_image{
+    flex: 0 0 auto;
+    background-color: lightgrey;
+    min-width: 300;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.links {
+    gap: 10px;
 }
