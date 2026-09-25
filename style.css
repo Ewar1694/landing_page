@@ -1,3 +1,4 @@
-header {
-    background-color: darkblue;
+.header {
+    display: flex;
+    direction: column;
 }
