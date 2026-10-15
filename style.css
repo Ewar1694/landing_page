@@ -1,7 +1,17 @@
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a, .logo, .hero_title, .hero_text, .body_title, .image_text, .quote, .citation, .action_title, .action_text, .action_button, .footer{
+    color: white;
+    text-decoration: none;
+}
+
 .header {
     display: flex;
     flex-direction: column;
-    background-color: darkblue;
+    background-color: darkred;
 }
 
 .header_top, .header_bottom {
@@ -13,13 +23,12 @@
     margin-bottom: 50px;
 }
 
-
-a, .logo, .hero_title, .hero_text {
-    color: white;
-    text-decoration: none;
+.links {
+    gap: 10px;
 }
 
 .hero_text {
+    padding-bottom: 25px;
     max-width: 300px;
 }
 
@@ -27,14 +36,26 @@ a, .logo, .hero_title, .hero_text {
     font-weight: bold;
 }
 
-.hero_title {
+.hero_title, .body_title {
     font-weight: bold;
     font-size: xx-large;
 }
 
-.hero_button {
-    background-color: blue;
+.hero_button, .action_button {
+    background-color: rebeccapurple;
     color: white;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.hero_button:hover, .action_button:hover {
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.action_button {
+    background-color: darkred;
 }
 
 .header_image{
@@ -43,14 +64,16 @@ a, .logo, .hero_title, .hero_text {
     min-width: 300;
 }
 
-ul {
-    list-style: none;
-    display: flex;
+.imgSample {
+    border-radius: 25px;
 }
 
-.links {
-    gap: 10px;
+.imgSample:hover{
+    border-radius: 0px;
+    height: 300px;
+    width: 300px;
 }
+
 
 .body, .body_top, .body_mid, .body_bottom{
     display: flex;
@@ -62,8 +85,16 @@ ul {
     padding: 100px;
  }
 
+ .body_top {
+    background-color: rgb(56, 56, 56);
+}
+
  .body_mid{
-    background-color: lightblue;
+     background-color: rgb(184, 4, 4);
+ }
+
+ .body_bottom {
+    background-color: rgb(56, 56, 56);
  }
 
 .action{
@@ -71,26 +102,38 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 25px;
     width: 800px;
     height: 100px;
-    background-color: rgb(43, 92, 134);
+    background-color: rebeccapurple;
 }
 
 .image_text {
     text-align: center;
+    justify-self: center;
     max-width: 150px;
 }
 
 .image_list {
+    justify-content: center;
     gap: 100px;
 }
 
 .citation {
     align-self: flex-end;
+    margin-top: 50px;
+    font-size: large;
+    font-weight: bold;
 }
 
 .footer {
     height: 50px;
-    background-color: darkblue;
+    background-color: rgb(104, 2, 2);
     text-align: center;
+}
+
+.quote {
+    margin-top: 15px;
+    font-size: xx-large;
+    font-style: italic;
 }
