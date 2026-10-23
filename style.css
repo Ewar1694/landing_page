@@ -12,6 +12,7 @@ a, .logo, .hero_title, .hero_text, .body_title, .image_text, .quote, .citation, 
     display: flex;
     flex-direction: column;
     background-color: darkred;
+    max-height: 350px;
 }
 
 .header_top, .header_bottom {
@@ -70,8 +71,8 @@ a, .logo, .hero_title, .hero_text, .body_title, .image_text, .quote, .citation, 
 
 .imgSample:hover{
     border-radius: 0px;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
 }
 
 
@@ -83,6 +84,7 @@ a, .logo, .hero_title, .hero_text, .body_title, .image_text, .quote, .citation, 
 
  .body_top, .body_mid, .body_bottom{
     padding: 100px;
+    max-height: 350px;
  }
 
  .body_top {
