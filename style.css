@@ -24,13 +24,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 50px;
 }
 
 .links {
-    gap: 10px;
+    gap: 30px;
 }
 
 .hero_text {
@@ -75,16 +75,6 @@ body{
     min-width: 300;
 }
 
-.imgSample {
-    border-radius: 25px;
-}
-
-.imgSample:hover{
-    border-radius: 0px;
-    height: 250px;
-    width: 250px;
-}
-
  .body_top, .body_mid, .body_bottom{
     display: flex;
     flex-direction: column;
@@ -93,16 +83,16 @@ body{
     max-height: 400px;
  }
 
- .body_top {
+ .body_top,  .body_bottom {
     background-color: rgb(56, 56, 56);
+}
+
+.body_top {
+    padding-top: 0px;
 }
 
  .body_mid{
      background-color: rgb(184, 4, 4);
- }
-
- .body_bottom {
-    background-color: rgb(56, 56, 56);
  }
 
 .action{
@@ -129,6 +119,16 @@ body{
 .image_list {
     justify-content: center;
     gap: 100px;
+}
+
+.imgSample, .header_image {
+    border-radius: 25px;
+}
+
+.imgSample:hover{
+    border-radius: 0px;
+    height: 250px;
+    width: 250px;
 }
 
 .citation {
